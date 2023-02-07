@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.mainnavigasi {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 997;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4));
+}
+
+
+.icon {
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 10px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+
+}
+
+.icon > div {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+}
+
+
+
+.navigasi {
+    margin-top: 25px;
+}
+
+
+.Mainitem {
+    list-style-type: none;
+    display: flex;
+}
+
+
+.seconditem2 {
+    margin-left: 5px;
+}
+
+.item {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.item:hover {
+    color: white;
+    background: crimson;
+    transition: .3s;
+}
+
+
+.started {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),url("../assets/started.gif");
+    background-size: cover;
+}
+
+.started > div {
+    overflow: hidden;
+}
+
+.started > div > div {
+    margin-top: 100px;
+}
+
+.started > div > div > .isi {
+    overflow: hidden;
+    color: white;
+    text-aligN: center;
+}
+
+.started > div > div > .isi > button {
+    z-index: 1;
+}
+
+.started > div > div > .isi > p {
+    line-height: normal;
+}
+
+
+.started > div > div > .isi > .Judul {
+    border-bottom: 1px solid crimson;
+    width: 500px;
+    overflow: hidden;
+    margin: auto;
+    padding: 0;
+}
+.started > div > div > .isi > .Judul > .judul {
+    font-size: 80px;
+}
+
+
+.started > div > div > .isi > .subjudul {
+    font-size: 15px;
+}
+
+.started > div > div > .isi > form > .About {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    transition: width 1s;
+}
+
+.started > div > div > .isi > form > .About:hover {
+    background-color: crimson;
+    transition: 1s;
+    width: 200px;
+}
+
+
+.about {
+    height: 100vh;
+    width: 100%;
+}
+
+.about > div {
+    margin-top: 100px;
+}
+
+.about > div > div {
+    overflow: hidden;
+    padding: 20px;
+}
+
+.about > div > div > .motif {
+
+}
+
+
+.about > div > div > .motif > .alasan{
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(1, 41, 112,0.5);
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about > div > div > .motif > .isialasan {
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(1, 41, 112,0.5);
+}
+
+.about > div > div > .motif > .socialmedia {
+    margin-top: 5px;
+}
+
+.about > div > div > .motif > .socialmedia > abbr {
+    margin-left: 30px;
+}
+
+.about > div > div > .motif > .socialmedia > .listitems {
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+}
+
+.about > div > div > .motif > .socialmedia > .listitems > .items {
+    margin-left: 20px;
+    padding: 3px;
+}
+
+.about > div > div > .motif > .socialmedia > .listitems > .items1 {
+    margin-left: 0;
+    background-color: black;
+}
+
+.about > div > div > .motif > .socialmedia > .listitems > .items2 {
+    background-color: #1778F2;
+}
+
+
+
+
+.about > div > div > .bio {
+}
+
+.about > div > div > .bio > .bioimage  {
+    background-color: dodgerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0 0 10px rgba(1, 41, 112,0.5);
+}
+
+.about > div > div > .bio > .bioimage > div{
+    border-radius: 80px;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: black;
+    margin: auto;
+}
+
+.about > div > div > .bio > .bioimage> div > img {
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.about > div > div > .bio > .isibio {
+    box-shadow: 0 0 5px rgba(1, 41, 112,0.5);
+}
+
+.about > div > div > .bio > .isibio > pre{
+    padding-top: 20px;
+    font-family: verdana;
+    line-height: default;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+@media only screen and (max-width: 1194px) {
+    .about > div > div > .bio > .isibio > pre{
+        padding-top: 20px;
+        font-family: verdana;
+        line-height: default;
+        padding-bottom: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        font-size: 13px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .about > div > div > .bio > .bioimage > div{
+        border-radius: 80px;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        border: 1px solid black;
+        margin-top: 10px;
+        background-color: black;
+        margin: auto;
+    }
+    
+    .about {
+        height: 100vh;
+        width: 100%;
+    }
+    
+    
+
+}
+
+@media only screen and (max-width: 575px) {
+    .started > div > div > .isi > .Judul {
+        border-bottom: 1px solid crimson;
+        width: 400px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0;
+    }
+    .started > div > div > .isi > .Judul > .judul {
+        font-size: 50px;
+    }   
+    
+    .started > div > div > .isi > .subjudul {
+        font-size: 11px;
+    }
+
+    .started > div > div > .isi > form > .About {
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        width: 80px;
+        border: none;
+        transition: width 1s;
+        font-size: 11px;
+    }
+    
+    .started > div > div > .isi > form > .About:hover {
+        background-color: crimson;
+        transition: 1s;
+        width: 160px;
+    }
+    
+
+}
+
+@media only screen and (max-width: 455px) {
+    .started > div > div > .isi > .Judul {
+        border-bottom: 1px solid crimson;
+        width: 320px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 345px) {
+    section > nav > div > .icon {
+        width: 20px;
+        height: 20px;
+        background-color: crimson;
+        display: none;
+    }
+
+    .started > div > div > .isi > .Judul {
+        border-bottom: 1px solid crimson;
+        width: 250px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0;
+    }
+
+    .started > div > div > .isi > .Judul > .judul {
+        font-size: 40px;
+    }   
+    
+    .started > div > div > .isi > .subjudul {
+        font-size: 9px;
+    }
+
+    .started > div > div > .isi > form > .About {
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        width: 70px;
+        border: none;
+        transition: width 1s;
+        font-size: 9px;
+    }
+    
+    .started > div > div > .isi > form > .About:hover {
+        background-color: crimson;
+        transition: 1s;
+        width: 140px;
+    }
+
+}
+
+@media only screen and (max-width: 275px) {
+
+    .started > div > div > .isi > .Judul {
+        border-bottom: 1px solid crimson;
+        width: 200px;
+        overflow: hidden;
+        margin: auto;
+        padding: 0;
+        background: none;
+    }
+
+    .started > div > div > .isi > .Judul > .judul {
+        font-size: 30px;
+    }   
+    
+    .started > div > div > .isi > .subjudul {
+        font-size: 9px;
+    }
+
+    .started > div > div > .isi > form > .About {
+        margin-top: 20px;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        width: 70px;
+        border: none;
+        transition: width 1s;
+        font-size: 9px;
+    }
+    
+    .started > div > div > .isi > form > .About:hover {
+        background-color: crimson;
+        transition: 1s;
+        width: 140px;
+    }
+
+}
+
